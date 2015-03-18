@@ -229,11 +229,17 @@ void loop() {
   }
   //Write values to hardware here
   //Use: AnalogWrite, DigitalWrite
-  
+  digitalWrite(dir_e, DirE);
+  digitalWrite(dir_d, DirD);
   digitalWrite(dir_c, DirC);
-  digitalWrite(dir_b, DirB); 
+  digitalWrite(dir_b, DirB);
+  digitalWrite(dir_a, DirA); 
+  analogWrite(pwm_e, SpdE);
+  analogWrite(pwm_d, SpdD);
   analogWrite(pwm_c, SpdC);
   analogWrite(pwm_b, SpdB);
+  analogWrite(pwm_a, SpdA);
+  
    
 }
 
